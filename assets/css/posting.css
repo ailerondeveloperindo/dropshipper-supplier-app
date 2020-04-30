@@ -1,0 +1,57 @@
+.sidenav{
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #50aeec;
+	overflow-x: hidden;
+	padding: 0px;
+}
+
+.sidenav img{
+	width: 50px;
+	height: 30px;
+}
+
+.sidenav h2 a{
+	font-size: 18px;
+	font-family: opal;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dot{
+	height: 110px;
+	width: 110px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 23px;
+}
+
+.sidenav p{
+	font-size: 15px;
+	text-align: center;
+	color: white;
+}
+
+.sidenav a{
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 15px;
+	display: block;
+	color: white;
+}
+
+.main{
+	margin-left: 160px;
+	padding: 0px 10px;
+}
+
+.col-sm-12 input {
+	width: 800px;
+	margin: 10px;
+}
