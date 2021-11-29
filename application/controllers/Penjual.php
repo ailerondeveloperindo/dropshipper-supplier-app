@@ -30,16 +30,16 @@ Class Penjual extends CI_Controller {
         $data['order'] = $this->pesanan_model->getpenjorder($_SESSION['usersession']['id']);
 	    $data['profile'] = $this->penjual_model->getuser($_SESSION['usersession']['id']);
         $data['pengiriman'] = $this->pengiriman_model->getlistinnerjoin($_SESSION['usersession']['id']);
-		$this->load->view('/penjualViews/dashboard/headeruser',$data);
-		$this->load->view('/penjualViews/dashboard/dashboarduser',$data);
-		$this->load->view('/penjualViews/dashboard/footeruser');
+		$this->load->view('/penjualviews/dashboard/headeruser',$data);
+		$this->load->view('/penjualviews/dashboard/dashboarduser',$data);
+		$this->load->view('/penjualviews/dashboard/footeruser');
 	}
 	public function usersetting()
 	{
 	    $data['profile'] = $this->penjual_model->getuser($_SESSION['usersession']['id']);
-		$this->load->view('/penjualViews/dashboard/headeruser',$data);
-		$this->load->view('/penjualViews/dashboard/settinguser',$data);
-		$this->load->view('/penjualViews/dashboard/footeruser');		
+		$this->load->view('/penjualviews/dashboard/headeruser',$data);
+		$this->load->view('/penjualviews/dashboard/settinguser',$data);
+		$this->load->view('/penjualviews/dashboard/footeruser');		
 	}
 	public function ViewPesanan($id)
 	{
@@ -48,9 +48,9 @@ Class Penjual extends CI_Controller {
             $data['profile'] = $this->penjual_model->getuser($_SESSION['usersession']['id']);
             $data['barang'] = $this->barang_model->getbarang($id);
             $data['kurir'] = $this->kurir_model->getlist();      
-    		$this->load->view('/penjualViews/dashboard/headeruser',$data);
-    		$this->load->view('/penjualViews/dashboard/checkout',$data);
-    		$this->load->view('/penjualViews/dashboard/footeruser');
+    		$this->load->view('/penjualviews/dashboard/headeruser',$data);
+    		$this->load->view('/penjualviews/dashboard/checkout',$data);
+    		$this->load->view('/penjualviews/dashboard/footeruser');
         }
         else
         {
@@ -102,8 +102,8 @@ Class Penjual extends CI_Controller {
 				{
 				   unset($_SESSION['usersession1']);
                    $array = array(
-                    'username' => $result['Username'],
-                    'id' => $result['id_penjual'],
+                    'username' => $result['username'],
+                    'id' => $result['Id_Penjual'],
                     'logged_in' => TRUE
                     );
 					$this->session->set_userdata('usersession',$array);

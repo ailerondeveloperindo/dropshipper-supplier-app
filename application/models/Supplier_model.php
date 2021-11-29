@@ -28,8 +28,8 @@ class Supplier_Model extends CI_Model {
        {
             $this->db->select('*');
             $this->db->from('profil_supplier');
-            $this->db->where('Username', $username);
-            $this->db->where('Password', $password);
+            $this->db->where('username', $username);
+            $this->db->where('password', $password);
             $query = $this->db->get();
             return $query->row_array();
        }

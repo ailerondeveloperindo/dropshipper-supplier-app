@@ -10,7 +10,7 @@
 			  <a href="#" class="card-aside-column" style="background-image: url(<?php echo base_url('/uploads/'.$profileitem['imagelink'])?>)"></a>
 			  <div class="card-body d-flex flex-column">
 			    <h4><a href="#"><?php echo $profileitem['Nama_Penjual']?></a></h4>
-          <div class="text-muted">Username : <?php echo $profileitem['Username']?></div>
+          <div class="text-muted">Username : <?php echo $profileitem['username']?></div>
         <?php endforeach; ?>
 			    <div class="text-muted">Penjual</div>
 			  </div>

@@ -42,7 +42,7 @@
                                       <?php foreach($profile as $profileitem): ?>
                     <span class="avatar" style="background-image: url(<?php echo base_url('/uploads/'.$profileitem['imagelink'])?>)"></span>
                     <span class="ml-2 d-none d-lg-block">
-                      <span class="text-default"><?php echo $profileitem['Username']?></span>
+                      <span class="text-default"><?php echo $profileitem['username']?></span>
                     <?php endforeach; ?>
                       <small class="text-muted d-block mt-1">Penjual</small>
                     </span>

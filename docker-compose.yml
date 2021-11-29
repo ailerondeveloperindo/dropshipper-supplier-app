@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  dropship_web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - CI_ENV="development"
+    networks:
+      - dropship_network
+
+  mysql_server:
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    networks:
+      - dropship_network
+
+networks:
+  dropship_network:
+    driver: bridge
+

@@ -1,4 +1,3 @@
-
 <?php
 class Kurir_Model extends CI_Model {
 
