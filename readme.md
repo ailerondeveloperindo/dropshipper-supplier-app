@@ -13,5 +13,10 @@ MySql
 ### Apache
 
 ### Docker
+Confirm that you have docker-compose installed on your system by running this command
 
+> docker-compose --version
+
+Please have it installed by following this guide, https://docs.docker.com/compose/install/. 
+Make sure that you are using the latest version of docker and docker-compose.
 
